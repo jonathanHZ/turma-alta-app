@@ -3,16 +3,20 @@
 
 class ModeladoCtrl {
 
-  constructor($http, modeladoService) {
+  constructor($http, modeladoSerpente) {
     var self = this;
     self.$http = $http;
     self.modelados = [];
-    self.calcular = modeladoService.calcular;
+    self.modeladoSerpente = modeladoSerpente;
+    self.detail = 'modelado-serpente';
 
     $http.get('/api/moldess/modelado').then(response => {
       console.log('********* ', response.data);
       self.modelados = response.data;
     });
+
+    var response = self.modeladoSerpente.calcular(1000,35,0.5);
+    console.log(response);
   }
 }
 
