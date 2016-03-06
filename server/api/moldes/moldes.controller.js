@@ -36,4 +36,13 @@ export function index(req, res) {
       'icon': 'fa fa-picture-o fa-2x'
     }
   ]);
-}
+};
+
+export function modelado(req, res) {
+  res.json([
+    {
+      'id': 0,
+      'name': 'modelado-serpente'
+    }
+  ]);
+};

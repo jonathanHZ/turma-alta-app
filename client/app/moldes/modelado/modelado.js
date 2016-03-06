@@ -6,6 +6,7 @@ angular.module('turmaAltaAppApp')
       .state('modelado', {
         url: '/moldes/modelado',
         templateUrl: 'app/moldes/modelado/modelado.html',
-        controller: 'ModeladoCtrl'
+        controller: 'ModeladoCtrl',
+        controllerAs: 'modeladoCtrl'
       });
   });
