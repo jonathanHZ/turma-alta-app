@@ -39,11 +39,8 @@ angular.module('turmaAltaAppApp')
 
     var calcular = function (largo, cantidadGajos, bainha) {
       var response = {
-        tableData : [];
-      	puntos : distanciaBase.length,
-        distancia : [],
-        ancho : [],
-        largoacum : []
+        tableData : [],
+      	puntos : distanciaBase.length
       };
       largoAcum=0
       //  if (distanciaBase.length != circunferenciaBase.length) {

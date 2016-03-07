@@ -6,13 +6,11 @@ function menu () {
     templateUrl: 'app/directives/menu/menu.html',
     restrict: 'EA',
     scope: {
-      menuData: '=menuData' ,
-      menucalular: '=menucalular' 
+      menuData: '=menuData'
     },
     link: function (scope, element, attrs) {
-    },
-    controller: ['$scope', function($scope){
-    }]
+      console.log(scope.menuData);
+    }
   };
 };
 

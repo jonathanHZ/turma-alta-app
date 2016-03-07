@@ -9,9 +9,9 @@ angular.module('turmaAltaAppApp')
         details: '='
       },
       link: function (scope, element, attrs) {
-        scope.largoGlobo = 0;
-        scope.gajosGlobo = 0;
-        scope.dobladilloGlobo = 0;
+        scope.largoGlobo = '';
+        scope.gajosGlobo = '';
+        scope.dobladilloGlobo = '';
         scope.moldeDetailData = {
           name  : '',
           image : ''
