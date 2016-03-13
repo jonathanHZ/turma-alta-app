@@ -1,5 +1,5 @@
 <div class="btn-group-vertical menu-parent">
-  <button type="button" class="btn btn-default menu-child" ng-repeat="item in menuData">
+  <a class="btn btn-default menu-child" ng-repeat="item in menuData" ui-serf="{{item.state}}">
     {{item.name}}
-  </button>
+  </a>
 </div>

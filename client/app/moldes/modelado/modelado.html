@@ -1,11 +1,13 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-2 col-md-2 padding-left-right-zero">
-      <menu class="padding-left-right-zero" menu-data="modeladoCtrl.modelados">
-      </menu>
+      <a class="btn btn-default" ng-repeat="item in modeladoCtrl.modelados" ui-sref="{{item.state}}">
+          {{item.name}}
+      </a>
+      <!-- <menu class="padding-left-right-zero" menu-data="modeladoCtrl.modelados"></menu> -->
     </div>
     <div class="col-lg-10 col-md-10">
-      <molde-detail details="modeladoCtrl.detail"/>
+      <div ui-view=""></div>
     </div>
   </div>
 </div>

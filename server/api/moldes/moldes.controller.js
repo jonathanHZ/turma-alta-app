@@ -42,7 +42,13 @@ export function modelado(req, res) {
   res.json([
     {
       'id': 0,
-      'name': 'modelado-serpente'
+      'name': 'modelado-serpente',
+      'state': 'modelado.serpente'
+    },
+    {
+      'id': 1,
+      'name': 'modelado-spinne',
+      'state': 'modelado.spinne'
     }
   ]);
 };
