@@ -1,9 +1,16 @@
-<div class="container">
+<div class="container container-moldes">
   <div class="row">
-    <div class="col-lg-2 col-md-2 padding-left-right-zero">
-      <a class="btn btn-default" ng-repeat="item in modeladoCtrl.modelados" ui-sref="{{item.state}}">
+    <div class="col-lg-2 col-md-2 lateral-menu">
+      <ul class="nav">
+        <li ng-repeat="item in modeladoCtrl.modelados">
+          <a ui-sref="{{item.state}}">
+            {{item.name}}
+          </a>
+        </li>
+      </ul>
+      <!-- <a class="btn btn-default" ng-repeat="item in modeladoCtrl.modelados" ui-sref="{{item.state}}">
           {{item.name}}
-      </a>
+      </a> -->
       <!-- <menu class="padding-left-right-zero" menu-data="modeladoCtrl.modelados"></menu> -->
     </div>
     <div class="col-lg-10 col-md-10">
