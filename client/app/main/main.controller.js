@@ -19,3 +19,13 @@ angular.module('turmaAltaAppApp')
   .controller('MainController', MainController);
 
 })();
+
+
+angular.module('turmaAltaAppApp').directive('mmenu', function() {
+	return {
+		restrict : 'A',
+		link : function(scope, element, attrs) {
+            $(element).mmenu({});
+		}
+	};
+});

@@ -14,7 +14,8 @@
     "lodash": "~2.4.1",
     "angular-ui-router": "~0.2.15",
     "angular-carousel": "^1.0.1",
-    "ngGallery": "*"
+    "ngGallery": "*",
+    "jQuery.mmenu": "^5.6.2"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.0"
