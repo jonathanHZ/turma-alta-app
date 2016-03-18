@@ -1,13 +1,19 @@
 <div class="navbar navbar-default navbar-static-top" ng-controller="NavbarController">
   <div class="container">
-    <div class="navbar-header text-left">
+    <!-- <div class="navbar-header text-left">
       <button class="navbar-toggle" type="button" ng-click="nav.isCollapsed = !nav.isCollapsed">
         <i class="fa fa-bars fa-2x"></i>
       </button>
     </div>
-    <div collapse="nav.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+    <div collapse="nav.isCollapsed" class="navbar-collapse collapse" id="navbar-main"> -->
       <ul class="nav navbar-nav">
-        <li ng-repeat="item in nav.menu" ui-sref-active="active">
+        <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <a href="#menu">
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+        </li>
+        <li ng-repeat="item in nav.menu" ui-sref-active="active"
+        class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
             <a ui-sref="{{item.state}}"
                 class="{{item.aClass}}"
                 tooltip-placement="bottom"
@@ -17,6 +23,6 @@
             </a>
         </li>
       </ul>
-    </div>
+    <!-- </div> -->
   </div>
 </div>

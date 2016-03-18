@@ -43,12 +43,12 @@ export function modelado(req, res) {
     {
       'id': 0,
       'name': 'modelado-serpente',
-      'state': 'modelado.serpente'
+      'state': 'moldes.serpente'
     },
     {
       'id': 1,
       'name': 'modelado-spinne',
-      'state': 'modelado.spinne'
+      'state': 'moldes.spinne'
     }
   ]);
 };

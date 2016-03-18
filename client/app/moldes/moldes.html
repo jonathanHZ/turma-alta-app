@@ -1,54 +1,41 @@
-<navbar></navbar>
+<!-- <navbar></navbar> -->
 <div class="container">
   <div class="row">
-    <div class="col-lg-12">
-      <tabset>
-        <tab class="tap-head">
-          <tab-heading>
-            <a ui-sref="modelado">
-              <i class="fa fa-picture-o fa-2x"></i>
-              Modelado
-            </a>
-          </tab-heading>
-          <!-- <div ng-include src="'app/moldes/modelado/modelado.html'" ng-controller="ModeladoCtrl as modeladoCtrl"></div> -->
-        </tab>
-        <tab class="tap-head">
-          <tab-heading>
-            <a>
-              <i class="fa fa-picture-o fa-2x"></i>
-              Truff
-            </a>
-          </tab-heading>
-          <div ng-include src="'app/moldes/truff/truff.html'"></div>
-        </tab>
-        <tab class="tap-head">
-          <tab-heading>
-            <a>
-              <i class="fa fa-picture-o fa-2x"></i>
-              Piao
-            </a>
-          </tab-heading>
-          <div ng-include src="'app/moldes/piao/piao.html'"></div>
-        </tab>
-        <tab class="tap-head">
-          <tab-heading>
-            <a>
-              <i class="fa fa-picture-o fa-2x"></i>
-              Golfier
-            </a>
-          </tab-heading>
-          <div ng-include src="'app/moldes/golfier/golfier.html'"></div>
-        </tab>
-        <tab class="tap-head">
-          <tab-heading>
-            <a>
-              <i class="fa fa-picture-o fa-2x"></i>
-              Lapidado
-            </a>
-          </tab-heading>
-          <div ng-include src="'app/moldes/lapidado/lapidado.html'"></div>
-        </tab>
-      </tabset>
-    </div>
+      <!-- <a class="btn btn-success" href="#menu"><i class="fa fa-bars fa-2x"></i></a> -->
+      <div class="row">
+          <nav  class="lateral-menu" id="menu" mmenu>
+           <div>
+             <ul class="nav">
+                 <li><a href="#modelado">Modelado</a></li>
+                 <li><a href="#truff">Truff</a></li>
+                 <li><a href="#piao">Piao</a></li>
+                 <li><a href="#golfier">Golfier</a></li>
+                 <li><a href="#lapidado">Lapidado</a></li>
+             </ul>
+              <!-- subpanel -->
+              <div id="modelado" class="Panel">
+                  <ul class="nav">
+                      <li ng-repeat="item in moldesCtrl.modelados">
+                          <a ui-sref="{{item.state}}">
+                              {{item.name}}
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+           </div>
+       </nav>
+          <!-- <div class="lateral-menu" id="menu" mmenu>
+              <ul class="nav">
+                  <li ng-repeat="item in modeladoCtrl.modelados">
+                      <a ui-sref="{{item.state}}">
+                          {{item.name}}
+                      </a>
+                  </li>
+              </ul>
+          </div> -->
+        <div class="col-lg-12 col-md-12  col-sm-12  col-xs-12 ">
+          <div ui-view=""></div>
+        </div>
+      </div>
   </div>
 </div>
